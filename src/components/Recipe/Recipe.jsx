@@ -3,8 +3,8 @@ import "./Recipe.css"
 
 export default class Recipe extends Component {
   render() {
-    const {title, instructions, img} = this.props;
-    const ingredients = this.props.ingredients.map((ing, index) => {
+    const {title, instructions, img} = this.props.recipe;
+    const ingredients = this.props.recipe.ingredients.map((ing, index) => {
       return <li key={index}>{ing}</li>;
     })
     return (
